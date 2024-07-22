@@ -1,0 +1,247 @@
+*{ 
+    margin: 0; 
+    padding: 0; 
+    box-sizing: border-box; 
+  } 
+
+
+  body{ 
+      width: 100%; 
+      height: 100%; 
+      display: flex; 
+      justify-content: center; 
+      align-items: center; 
+      letter-spacing: 1px; 
+      background-color: #0c1022; 
+  } 
+
+
+  .login_form_container{ 
+      position: relative; 
+      width: 400px; 
+      height: 550px; 
+      max-width: 400px; 
+      max-height: 550px; 
+      background: #040717; 
+      border-radius: 50px 5px; 
+      display: flex; 
+      align-items: center; 
+      justify-content: center; 
+      overflow: hidden; 
+      margin-top: 70px; 
+  } 
+
+
+  .login_form_container::before{ 
+       
+      position: absolute; 
+      width: 170%; 
+      height: 170%; 
+      content: ''; 
+      background-image: conic-gradient(transparent, transparent, transparent, #ee00ff); 
+      animation: rotate_border 6s linear infinite; 
+   
+  } 
+  .login_form_container::after{ 
+       
+      position: absolute; 
+      width: 170%; 
+      height: 170%; 
+      content: ''; 
+      background-image: conic-gradient(transparent, transparent, transparent, #00ccff); 
+      animation: rotate_border 6s linear infinite; 
+      animation-delay: -3s; 
+  } 
+
+
+  @keyframes rotate_border{ 
+      0%{ 
+          filter: hue-rotate(360deg); 
+      } 
+      100%{ 
+          transform: rotate(360deg); 
+      } 
+  } 
+
+
+  .login_form{ 
+      position: absolute; 
+      content: ''; 
+      background-color: #0c1022; 
+      border-radius: 50px 5px; 
+      inset: 5px; 
+      padding: 50px 40px; 
+      z-index: 10; 
+      color: #00ccff; 
+   
+  }  
+  h2{ 
+      font-size: 40px; 
+      font-weight: 600; 
+      text-align: center; 
+  } 
+  .input_group{ 
+      margin-top: 40px; 
+      position:relative; 
+      display:flex; 
+      align-items: center; 
+      justify-content: start; 
+  } 
+  .input_text{ 
+      width: 95%; 
+      height: 30px; 
+      background: transparent; 
+      border: none; 
+      outline: none; 
+      border-bottom: 1px solid #00ccff; 
+      font-size: 20px; 
+      padding-left: 10px; 
+      color: #00ccff; 
+   
+  } 
+  ::placeholder{ 
+      font-size: 15px; 
+      color: #00ccff52; 
+      letter-spacing: 1px; 
+   
+  } 
+  .fa{ 
+      font-size: 20px; 
+   
+  } 
+  
+  #login_button{ 
+      position: relative; 
+      width: 300px; 
+      height: 40px; 
+      transition: 1s; 
+      margin-top: 70px; 
+   
+  } 
+  
+ /* Add these styles for the submit button */
+#login_button input[type="submit"] {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    text-decoration: none;
+    z-index: 10;
+    cursor: pointer;
+    font-size: 22px;
+    letter-spacing: 2px;
+    border: 1px solid #00ccff;
+   
+    background-color: #0c1022;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #00ccff; /* Text color for the button */
+    background-color: #0c1022; /* Background color for the button */
+    transition: 0.3s; /* Add a smooth transition effect */
+  }
+  
+  #login_button input[type="submit"]:hover {
+    background-color: #00ccff; /* Change background color on hover */
+    color: #0c1022; /* Change text color on hover */
+    box-shadow: 0 0 10px #00ccff; /* Add a box-shadow on hover */
+  }
+.reg a {
+    text-decoration: none;
+    position: relative; 
+      width: 300px; 
+      height: 40px; 
+      transition: 1s; 
+      margin-top: 40px; 
+      position:relative; 
+      display:flex; 
+      align-items: center; 
+      justify-content: start; 
+      font-size: 22px;
+      border: 1px solid #00ccff;
+      background-color: #0c1022;
+    display: flex;
+    justify-content: center;
+    color: #00ccff;
+    
+  }
+  .reg a:hover {
+    background-color: #00ccff; /* Change background color on hover */
+    color: #0c1022; /* Change text color on hover */
+    box-shadow: 0 0 10px #00ccff; /* Add a box-shadow on hover */
+  }
+  /* .reg{
+    width: 100px;
+    height: 20px;
+    border: 1px solid black;
+    color: white; */
+
+  
+  
+  
+
+  .fotter { 
+      margin-top: 30px; 
+      display: flex; 
+      justify-content: space-between; 
+      color: #0ef;
+
+  } 
+
+  .fotter a:hover{
+    text-decoration: underline;
+   
+  }
+
+  .fotter p:hover{
+    text-decoration: underline;
+    
+  }
+  .fotter a{ 
+      text-decoration: none; 
+      cursor: pointer; 
+      font-size: 14px; 
+      color: #00ccff;
+  } 
+
+  .fotter p{ 
+    text-decoration: none; 
+    cursor: pointer; 
+    font-size: 14px; 
+    color: #00ccff;
+} 
+
+  .glowIcon { 
+      text-shadow: 0 0 10px #8f90c6; 
+   
+  }
+
+  /* Default styles for larger screens */
+/* ... Your existing CSS code ... */
+
+/* Media query for screens smaller than 600px */
+@media (max-width: 300px) {
+    body {
+      flex-direction: column; /* Stack elements vertically on smaller screens */
+    }
+  
+    .login_form_container {
+      width: 90%; /* Make the container wider on smaller screens */
+      height: auto; /* Allow the container to expand vertically as needed */
+    }
+  
+    .login_form {
+      padding: 30px 20px; /* Adjust padding for smaller screens */
+    }
+  
+    .input_group {
+      margin-top: 20px; /* Reduce the margin on smaller screens */
+    }
+  
+    #login_button {
+      width: 100%; /* Make the button take full width on smaller screens */
+    }
+  }
+  
+  /* Additional media queries for other screen sizes can be added here */
+  
+

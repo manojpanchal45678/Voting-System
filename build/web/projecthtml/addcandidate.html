@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Login Form</title>
+        
+        <link rel="stylesheet" href="../projectcss/addcandidate.css" type="text/css">
+    </head>
+    <body>
+        <div class="login_form_container">
+            <div class="login_form">
+                <h2>Candidate Registration</h2>
+                <form action="/Project1/CandidateLogin" enctype="multipart/form-data" Method="POST">
+                 
+                    <div class="input_group">
+                        <i class="fa fa-user"></i>
+                        <input type="text" placeholder="Candidate-Name" name="name" class="input_text" required=""/>
+                    </div>
+                    <div class="input_group">
+                        <i class="fa fa-male"></i>
+                        <input type="text" placeholder="Father-Name" name="father" class="input_textchange" required=""/>
+                    </div>
+                    <div class="input_group">
+                        <i class="fa fa-female"></i>
+                        <input type="text" placeholder="Mother-Name" name="mother" class="input_textchange" required=""/>
+                    </div>
+                    <div class="input_group">
+                        <i class="fa fa-birthday-cake"></i>
+                        <input type="number" placeholder="Candidate-Age>=21" name="age" class="input_textchange" required=""/>
+                    </div>
+                    <div class="input_group">
+                        <i class="fa fa-home"></i>
+                        <input type="text" placeholder="Candidate-Address" name="address" class="input_textchange" required=""/>
+                    </div>
+                    <div class="input_group">
+                        <i class="fa fa-flag"></i>
+                        <input type="text" placeholder="Party Name" name="party" class="input_textchange" required=""/>
+                    </div>
+                    <div class="file">
+                        <input type="file" name="file" id="file" class="file-input">
+                        <label id="filee" for="file" class="file-label">Upload Party Symbol</label>
+                    </div>
+                    <div class="button_group" id="login_button">
+                        <input type="reset" value="Reset" class="reset-button">
+                        <input type="submit" value="Submit" class="reset-button">
+                    </div>
+                </form>
+            </div>
+        </div>
+    </body>
+</html>

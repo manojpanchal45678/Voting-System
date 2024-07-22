@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>Voter Registration</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="../projectcss/voterregistration.css" type="text/css">
+    </head>
+    <body>
+        <div class="login_form_container">
+            <div class="login_form">
+                <h2>Voter Registration</h2>
+                <form action="/Project1/VoterRegistration" method="POST">
+                    <div class="input_group">
+                        <i class="fa fa-user"></i>
+                        <input type="text" placeholder="Voter-Name" name="vname" class="input_text" autocomplete="off" />
+                    </div>
+                    <div class="input_group">
+                        <i class="fa fa-male"></i>
+                        <input type="text" placeholder="Father-Name" name="father" class="input_textchange" autocomplete="off" />
+                    </div>
+
+                    <div class="input_group">
+                        <i class="fa fa-birthday-cake"></i>
+                        <input type="number" placeholder="Voter-Age" name="age" class="input_textchange" autocomplete="off" />
+                    </div>
+
+                    <div class="input_group">
+                        <i class="fa fa-lock"></i>
+                        <input type="password" placeholder="Password" name="password" class="input_textchange" autocomplete="off" />
+                    </div>
+                    <!-- <div class="file">
+                        <input type="file" id="file" class="file-input">
+                        <label id="filee" for="file" class="file-label">Upload Party Symbol</label>
+                    </div> -->
+                    <div class="button_group" id="login_button">
+                        <input type="reset" value="Reset" class="reset-button">
+                        <input type="submit" value="Submit" class="reset-button">
+                    </div>
+                </form>
+            </div>
+        </div>
+    </body>
+</html>

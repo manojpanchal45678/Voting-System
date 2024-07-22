@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Animated Login Form</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="../projectcss/newAdmin.css" />
+ </head>
+<body>
+    <form action="/Project1/NewAdmin" method="POST">
+        <div class="login_form_container">
+              <div class="login_form">
+                <h2>Add new admin</h2>
+                <div class="input_group">
+                    <i class="fa fa-user"></i>
+                    <input id="fname" type="text" name="fn" placeholder="First Name" class="input_text" required=""/>
+                </div>
+                <div class="input_group">
+                    <i class="fa fa-user"></i>
+                    <input id="lname" type="text" name="ln" placeholder="Last Name" class="input_text" required=""/>
+                </div>
+                <div class="input_group">
+                    <i class="fa fa-home"></i>
+                    <input id="address" type="text" name="add" placeholder="Address" class="input_text" required=""/>
+                </div>
+                <div class="input_group">
+                    <i class="fa fa-unlock-alt"></i>
+                    <input type="password" id="pass" name="pass" placeholder="Password" class="input_text" required=""/>
+                </div>
+                <div class="button_group" id="login_button" class="btn-container">
+                    <input type="submit" id="btn" value="Submit">
+                </div>
+            </div>
+        </div>
+    </form>
+</body>
+
+</html>

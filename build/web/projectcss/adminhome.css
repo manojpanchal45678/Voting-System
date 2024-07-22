@@ -1,0 +1,169 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+body {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    letter-spacing: 1px;
+    background-color: #0c1022;
+
+}
+
+
+.New-Admin {
+    position: absolute;
+    top: 70px; /* Adjust the top position to your preference */
+    right: 100px; /* Adjust the right position to your preference */
+    color: rgb(3, 235, 248);
+    box-sizing: border-box;
+    border: 1px solid rgb(3, 235, 248);
+    background-color: #0c1022;
+    font-size: 20px;
+    padding: 1rem;
+    transition: 0.3s ease-in-out all;
+    border-radius: 20px;
+    font-weight: bold; /* Use 'font-weight' instead of 'font' for specifying the font weight */
+}
+
+.New-Admin:hover {
+    
+    position: absolute;
+    color: rgb(0, 0, 0);
+    box-sizing: border-box;
+    border:1px solid rgb(3, 235, 248) ;
+    background-color:   rgb(3, 235, 248);
+    font-size: 20px;
+    padding: 1rem;
+    cursor: pointer;
+}
+
+
+
+.navbar {
+    margin-top: 150px;
+    text-align: center;
+    background-color: #0c1022;
+    border-radius: 1rem;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    height: 300px;
+    width: 1000px;
+    box-sizing: border-box;
+
+}
+
+.nav-links {
+    display: flex;
+    gap: 2rem;
+    font-size: 50px;
+    text-align: justify;
+}
+
+.nav-link,
+.drop-down li {
+    list-style: none;
+    height: 100%;
+    padding: 0.5rem 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    color: rgb(3, 235, 248);
+    display: inline;
+    text-align: center;
+
+}
+
+
+.drop-down li a {
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    display: inline;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    align-items: center;
+    justify-content: center;
+
+}
+
+a {
+    text-decoration: none;
+    color: currentColor;
+}
+
+.drop-down {
+    position: absolute;
+    background: antiquewhite;
+    color: black;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    border-radius: 0.5rem;
+    font-size: 20px;
+    display: none;
+    margin-left: 320px;
+    margin-top: -63px;
+    text-align: center;
+}
+
+#political:hover,
+#University:hover,
+#College:hover {
+    background-color: rgb(3, 235, 248);
+    color: #050138;
+    border-radius: 0.7rem;
+    height: 60px;
+    width: 300px;
+    text-align: center;
+    justify-content: center;
+    padding: 20px;
+}
+
+.services:hover .drop-down {
+    display: block;
+    height: 40px;
+    width: 920px;
+    justify-content: center;
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 0;
+}
+
+
+.services a {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+.services .dropdown-icon {
+    font-size: 30px;
+    position: relative;
+   
+    transform: rotate(0deg);
+    transition: 0.3s ease-in-out all;
+    align-content: right;
+    padding-left: 50px;
+    margin: auto;
+
+}
+
+.services:hover .dropdown-icon {
+    transform: rotate(-180deg);
+    padding-left: 50px;
+
+}
+
+.drop-down li a:hover {
+    background: black;
+    color: #fff;
+    border-radius: 0.4rem;
+    padding: 5px 10px 5px 10px;
+}
+#University,
+#College{
+    margin-top: 40px;
+}
+
